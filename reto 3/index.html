@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio de Usuarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <header class="panel-header">
+            <h1>Directorio de Usuarios</h1>
+            <p>Sistema de consulta dinámica vía API</p>
+        </header>
+
+        <div class="data-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo electrónico</th>
+                        <th>Teléfono</th>
+                        <th>Empresa</th>
+                    </tr>
+                </thead>
+                <tbody id="listadoUsuarios">
+                    <tr>
+                        <td colspan="4" class="estado-carga">Conectando con el servidor...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
